@@ -1,5 +1,4 @@
 import os
-
 from test.scenarios import scenario
 from config import test_main,test_mode
 

@@ -1,7 +1,7 @@
 
 # don't import all, just keep the parts needed
 from partecipants import Championship
-from utils import report_to_file, info
+from utils import *
 from resources.data import *
 
 from config import ftest, source
@@ -19,22 +19,21 @@ def scenario(n):
             print("Mean age of "+ t1.name + ": " + str(t1.mean_age()) )
             print(c.attendance())
 
-        # untested:
         case 2:
             try:
                 c.from_file(source)
             except:
                 pass
             try:
-                report_to_file(ftest["out"], c)
+                report(ftest["out"], c)
             except:
                 pass
             try:
-                report_to_file(ftest["age"], c, "age")
+                report_age(ftest["age"], c)
             except:
                 pass
             try:
-                report_to_file(ftest["att"], c, "top_att")
+                report_top_attendance(ftest["att"], c)
             except:
                 pass
 

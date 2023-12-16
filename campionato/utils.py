@@ -24,14 +24,17 @@ from typing import Any
 
 
 # these are the actual functions to be called
-def report_attendance(path:str, c:Any):
-    report_to_file(path, c, "attendance")
+def report(path:str, c:Any):
+    report_to_file(path, c)
 
 def report_age(path:str, c:Any):
     report_to_file(path, c, "age")
 
+def report_attendance(path:str, c:Any):
+    report_to_file(path, c, "att")
+
 def report_top_attendance(path:str, c:Any):
-    report_to_file(path, c, "top_attendance")
+    report_to_file(path, c, "top_att")
 
 def info(c:Any):
     print(c.info())
@@ -50,12 +53,8 @@ def parse_file(path:str) -> list[str]:
 
     except FileNotFoundError as f:
             print(f, "\nCheck path")
-    
-    
 
-
-
-def report(c:Any, prop:str) -> dict[str: Any]:
+def from_prop(c:Any, prop:str) -> dict[str: Any]:
     
     match prop:
         case "att":
@@ -67,11 +66,10 @@ def report(c:Any, prop:str) -> dict[str: Any]:
         case None:
             return c
 
-
 # print to file a dictionary of the form { string: Any }
 def report_to_file(path:str, c:Any, prop:str=None):
     try:
-        data = report(c, prop)
+        data = from_prop(c, prop)
     except:
         data = c
     
@@ -83,6 +81,6 @@ def report_to_file(path:str, c:Any, prop:str=None):
                 # my classes be sequences
                 fp.write(str(data[k])) # note, write doesn't call __str__ like print, so you have to convert on your own babe
     except:
-         print("Invalid path?")
+         print("Invalid path!")
 
 

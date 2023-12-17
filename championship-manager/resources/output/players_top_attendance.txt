@@ -1,0 +1,44 @@
+Milan:
+(Laura, Gialli, 1988, 75)
+(Marco, Azzurri, 1991, 70)
+(Arianna, Azzurri, 1994, 65)
+Inter:
+(Alessia, Rossi, 1988, 75)
+(Riccardo, Arancione, 1985, 70)
+(Federico, Arancione, 1985, 70)
+Roma:
+(Matteo, Arancioni, 1991, 70)
+(Eleonora, Celesti, 1994, 65)
+(Fabio, Verde, 1990, 55)
+Atalanta:
+(Matteo, Arancioni, 1991, 70)
+(Elisa, Neri, 1990, 60)
+(Luigi, Verde, 1990, 55)
+Fiorentina:
+(Alessia, Gialli, 1990, 75)
+(Marco, Rosa, 1992, 70)
+(Andrea, Rosa, 1988, 65)
+Torino:
+(Laura, Gialli, 1988, 75)
+(Riccardo, Arancione, 1985, 70)
+(Elisa, Neri, 1990, 60)
+Sampdoria:
+(Federico, Arancione, 1985, 70)
+(Giacomo, Rosa, 1988, 65)
+(Arianna, Azzurri, 1994, 65)
+Juventus:
+(Laura, Gialli, 1988, 75)
+(Alessia, Gialli, 1990, 75)
+(Riccardo, Arancione, 1985, 70)
+Napoli:
+(Laura, Gialli, 1988, 75)
+(Alessia, Gialli, 1990, 75)
+(Federico, Arancione, 1985, 70)
+Udinese:
+(Matteo, Arancioni, 1991, 70)
+(Elisa, Neri, 1990, 60)
+(Sofia, Rosa, 1993, 55)
+Lazio:
+(Riccardo, Arancione, 1985, 70)
+(Matteo, Arancioni, 1991, 70)
+(Eleonora, Marroni, 1991, 65)

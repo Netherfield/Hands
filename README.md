@@ -1,6 +1,9 @@
+# run with
+`py .\start.py --with-dep`
+
+
 ## TODO:
 ### Done!
-
 
 - ✅ testare scenario 3
 - ✅ scenario 3 was just calling attendance() instead of attendance

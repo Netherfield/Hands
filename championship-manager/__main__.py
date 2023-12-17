@@ -12,5 +12,3 @@ if test_mode and test_main in [1,2]:
 else:
     print("Invalid argument, exited")
 
-# clean up environment at the end of execution
-os.system("pyclean .")

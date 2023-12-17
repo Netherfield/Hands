@@ -5,10 +5,10 @@ import os
 test_mode = True
 test_main = 2
 
-source = 'resources/players.txt'
+source = 'championship-manager/resources/players.txt'
 
 # git doesn't like empty folders, so if it's not populated I have to make it here
-output_dir = 'resources/output/'
+output_dir = 'championship-manager/resources/output/'
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 

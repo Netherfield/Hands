@@ -32,3 +32,8 @@ sys.path.insert(0, base_dir)
 from libhands.scripts.main import main
 main()
 
+try:
+    # clean up environment at the end of execution
+    os.system("pyclean .")
+except:
+    print("pyclean . \nFailed execution. Exiting...")

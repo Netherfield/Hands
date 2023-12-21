@@ -1,5 +1,6 @@
 |logo|
-** Modular data analysis library for JDE course **
+
+**Modular data analysis library for JDE course**
 
 Features
 ========
@@ -9,5 +10,5 @@ Features
 
 
 .. |logo| image:: none
-    :alt: Hands
+    :alt: 🤝HANDS
     :target: https://github.com/Netherfield/homework

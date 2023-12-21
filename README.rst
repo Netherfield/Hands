@@ -9,6 +9,6 @@ Features
 
 
 
-.. |logo| image:: https://github.com/Netherfield/Hands/blob/main/hands.png
+.. |logo| image:: https://github.com/Netherfield/Hands/blob/main/logo.png
     :alt: 🤝HANDS
     :target: https://github.com/Netherfield/homework

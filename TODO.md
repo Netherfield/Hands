@@ -6,6 +6,7 @@
 - [ ] Add documentation
 - [ ] make it extensible
 - [ ] layout project
+- [ ] make logo
 
 
 

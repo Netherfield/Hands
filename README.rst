@@ -1,11 +1,15 @@
 |logo|
 
-**Modular data analysis library for JDE course**
+🤝Hands
+========
+
+**Extensible data analysis library for JDE course**
 
 Features
 ========
 
-* Tables manipulation (column statistics)
+* Tables manipulation -> column & row manipulation, creation, statistics, element extraction
+* Dataset -> Merging, cleaning, auto parsing
 
 
 

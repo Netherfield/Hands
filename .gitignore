@@ -1,2 +1,7 @@
-/campionato/resources/output/*
+
+
+test/*
+output/*
+
+
 *_pycache_*

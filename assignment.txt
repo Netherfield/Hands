@@ -1,0 +1,38 @@
+Per ognuna di queste tracce, crearsi i file csv da avere in input. Createli direttamente con excel o con editor di testo, l’importante è che abbiano la formattazione csv.
+
+Idea: potete crearli usando python partendo dai dataset del trentino che hanno nomi e cose varie, e altre cose come i voti potete generarli random.
+
+A vostra scelta, se create dei csv corposi, mandateli su discord ad utilizzo di tutti. Ai fini di queste tracce
+
+Traccia 1: Analisi dei Dati da un CSV
+
+Obiettivo: Creare una classe DataAnalyzer che legge un file CSV contenente dati su studenti (nome, voto1, voto2, voto3) e fornisce metodi per analizzare le prestazioni degli studenti.
+
+Crea una classe Student per rappresentare uno studente con attributi nome e voti.
+Implementa una classe DataAnalyzer che legge il file CSV, istanzia oggetti Student e fornisce i seguenti metodi:
+get_average_grade(student_name): Restituisce la media dei voti dello studente specificato.
+get_highest_grade(): Restituisce il nome dello studente con il voto più alto.
+get_average_class_grade(): Restituisce la media dei voti di tutta la classe.
+
+
+Traccia 2: Gestione di Dati di Prodotti
+Obiettivo: Creare una classe ProductManager per gestire un catalogo di prodotti attraverso un file CSV.
+
+Crea una classe Product per rappresentare un prodotto con attributi nome, prezzo e quantità in magazzino.
+Implementa una classe ProductManager che legge un file CSV contenente dati sui prodotti e fornisce i seguenti metodi:
+add_product(product): Aggiunge un nuovo prodotto al catalogo.
+update_stock(product_name, quantity): Aggiorna la quantità disponibile di un prodotto nel magazzino.
+get_product_info(product_name): Restituisce le informazioni di un prodotto.
+get_total_stock_value(): Calcola il valore totale del magazzino in base ai prezzi e alle quantità.
+
+
+Traccia 3: Sistema di Prenotazioni
+Obiettivo: Creare un sistema di prenotazioni utilizzando un file CSV per memorizzare le informazioni sui posti disponibili.
+
+Crea una classe BookingSystem che legge un file CSV contenente la disposizione dei posti in una sala (numero di file e colonne) e lo stato attuale delle prenotazioni.
+Implementa i seguenti metodi nella classe BookingSystem:
+display_seating_plan(): Visualizza la disposizione dei posti nella sala.
+check_availability(row, seat): Verifica se un determinato posto è disponibile.
+make_reservation(row, seat, customer_name): Effettua una prenotazione per un posto specificato.
+cancel_reservation(row, seat): Annulla la prenotazione per un posto specificato.
+get_reserved_seats(): Restituisce una lista dei posti prenotati.

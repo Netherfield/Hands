@@ -8,8 +8,8 @@
 Features
 ========
 
-* Tables manipulation -> column & row manipulation, creation, statistics, element extraction
-* Dataset -> Merging, cleaning, auto parsing
+* Tables manipulation -> column & row manipulation, creation, statistics, range extraction
+* Dataset -> Merging, cleaning, autofill and autoparse
 
 
 

@@ -18,11 +18,36 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-from libhands.resources.paths import *
-from objects.tables import Table
+from typing import Self
 
-# get average value of column at certain index (row if row=True)
-def get_average(t:Table, index, row=False) -> float:
+
+
+class Table:
     ...
+
+    
+    # transpose Table, i.e. table[x][y] == table.transpose()[y][x]
+    def transpose(self) -> Self:
+        t = ...
+        return t
+    
+    def insert_column(self, index) -> None:
+        ...
+
+    def insert_row(self, index) -> None:
+        ...
+
+    def get_column(self, index) -> list:
+        ...
+
+    # this might be useless
+    # def get_row(self, index) -> list:
+    #     ...
+
+
+
+
+
+
 
 

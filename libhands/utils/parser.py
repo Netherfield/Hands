@@ -17,10 +17,20 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
+from typing import Any
 
-# methods to navigate lists or csv as a table of row/columns
-class Table:
+
+# methods to parse csv based on known class types and matching column types
+class smart_csv:
     ...
+
+
+    # parse c.__dict__to search value names matching
+    # even partially the table's headers
+    def autofill(self, c:Any) -> None:
+        # a loop like this:
+        """for att in c.__dict__:
+            c.__dict__[att] = self.table[att]"""
 
 
 

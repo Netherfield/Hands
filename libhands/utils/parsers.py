@@ -18,19 +18,50 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 from typing import Any
+from csv import reader,writer
+from libhands.objects.tables import Table
 
 
 # methods to parse csv based on known class types and matching column types
-class smart_csv:
-    ...
+# - From csv form Table object
+# - From class instance c fill instance with table values | create list with filled instances
+# - Extract column function
+# - ? page functionality, estract only n lines
+
+class Thumb(Table):
+    def __init__(self) -> None:
+        ...
+
+    # parses csv into a table object
+    def parse(self, path:str, *, sep=',') -> None:
+        with open(path, 'r', newline='') as fp:
+            ptr = reader(fp, delimiter=sep)
+            self.title = ptr.__next__()
+            self.table = []
+            for line in ptr:
+                self.table.append(line)
+
+    def column(self, path:str, value:str, *, sep=',') -> list | None:
+        with open(path, 'r', newline='') as fp:
+            ptr = reader(fp, delimiter=sep)
+            titles = ptr.__next__()
+            try:
+                index = titles.index(value)
+                col = []
+                for line in ptr:
+                    col.append(line[index])
+            except:
+                col = None
+            return col
 
 
     # parse c.__dict__to search value names matching
     # even partially the table's headers
-    def autofill(self, c:Any) -> None:
+    def autocompile(self, c:Any, *, extend:bool=True) -> None | list:
         # a loop like this:
         """for att in c.__dict__:
             c.__dict__[att] = self.table[att]"""
+        
 
 
 

@@ -19,7 +19,7 @@
 # SOFTWARE.
 
 from libhands.resources.paths import *
-from objects.tables import Table
+from libhands.objects.tables import Table
 
 # get average value of column at certain index (row if row=True)
 def get_average(t:Table, index, row=False) -> float:

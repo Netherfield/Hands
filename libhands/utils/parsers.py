@@ -36,23 +36,25 @@ class Thumb(Table):
     def parse(self, path:str, *, sep=',') -> None:
         with open(path, 'r', newline='') as fp:
             ptr = reader(fp, delimiter=sep)
-            self.title = ptr.__next__()
-            self.table = []
-            for line in ptr:
-                self.table.append(line)
+            'rewrite with proper methods of the Table class'
+            # self.title = ptr.__next__()
+            # self.table = []
+            # for line in ptr:
+            #     self.table.append(line)
 
     def column(self, path:str, value:str, *, sep=',') -> list | None:
         with open(path, 'r', newline='') as fp:
             ptr = reader(fp, delimiter=sep)
-            titles = ptr.__next__()
-            try:
-                index = titles.index(value)
-                col = []
-                for line in ptr:
-                    col.append(line[index])
-            except:
-                col = None
-            return col
+            'rewrite with the methods of the table class'
+            # titles = ptr.__next__()
+            # try:
+            #     index = titles.index(value)
+            #     col = []
+            #     for line in ptr:
+            #         col.append(line[index])
+            # except:
+            #     col = None
+            # return col
 
 
     # parse c.__dict__to search value names matching

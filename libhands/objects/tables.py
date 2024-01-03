@@ -62,6 +62,12 @@ class Table:
                 self.column += [[]]
                 for j in range(1, len(self.matrix)):
                     self.column[i] += [self.matrix[j][i]]
+            
+            '''Copy from other Table t or fill manually or don't copy?'''
+            self.table = {'titles' : self.title, # table titles
+                          'size' : (len(self.row), len(self.column)), # rows x columns
+                          'type' : None,    # data type of the entries
+                          'default' : None} # default value when data is missing
         else:
             raise Exception('Table already populated')
 
